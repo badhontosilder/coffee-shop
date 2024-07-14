@@ -2,86 +2,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
+body{
+    background-image: url(./cvc.webp);
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* background: red; */
-    z-index: 00;
+    justify-content: space-between; 
 }
-.header .logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-}
-.nav a{
-    position: relative;
-    font-size: 15px;
-    color: #fff;
-    text-decoration: none;
-    padding: 20px;
-}
-.nav a::after{
-    content: '';
-    position: absolute;
-    left:20px;
-    bottom: 13px;
-    width: 60%;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: .5s;
-}
-.nav a:hover::after{
-    transform: scaleX(1);
-}
-.home{
-     width: 100%;
-     height: 100vh;
-     background: url(./coff.avif) no-repeat;
-     background-size: cover;
-     background-position: center;
-     display: flex;
-     align-items: center;
-     padding: 5px 100px 210px;
-}
-.home .content{
-    max-width: 600px;
-    color: #fff;
-    
-}
-.content h2{
-    font-size: 40px;
-     letter-spacing: 0.9px;
-     color: burlywood;
+.container h1{
+    color: rgb(241, 26, 26);
+    margin-left: 60px;
+    cursor: pointer;
 }
 span{
-    color: #f80c0c;
-    margin-right: 7px;
+   margin-left: 10px;
     font-style: italic;
+    color: violet;
 }
-.content p{
+.navber ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
     font-size: 20px;
-    color: #f1f0f0;
-    margin: 10px;
 }
-.content a{
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #fff;
-    font-weight: 500;
-    padding: 8px 40px;
-    border-radius: 40px;
-    transition: .2s;
+ 
+.navber ul li a{
+     text-decoration: none;
+     color: #0a0606;
+     padding: 10px;
 }
-.content a:hover{
-    background-color: black;
+.navber ul li a:hover{
+     color:  rgb(241, 26, 26);
+     transform: matrix3d(3);
+    
 }
+.navber .reservation{
+    padding: 8px;
+    background-color: rgb(241, 26, 26) ;
+    border-radius: 10px;
+}
+ .navber ul li .reservation:hover{
+    background-color: aliceblue;
+ }
+ .content{
+     position: absolute ;
+     top: 20%;
+     left: 17%;
+     color: #199a78;
+ }
+ .content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 30%;
+ }
+ .content p{
+    text-align: center;
+    margin-top: 17px;
+    color: rgb(235, 230, 230);
+ }
+ .content h1{
+    font-size: 50px;
+ }
+ .search{
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 30%;
+ }
+ .search input{
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    size: 1em;
+    width: 100%;
+    background-color: #d7b1b1;
+ }
+ .submit{
+   position: absolute;
+   margin-top:19%;
+   margin-left: 35%;
+ }
+ .submit a{
+   text-decoration: none;
+   color: rgb(241, 26, 26) ;
+   padding: 8px;
+   background-color: rgb(244, 227, 227) ;
+   border-radius: 10px;
+ }
+ .submit a:hover{
+   text-decoration: underline;
+   color: rgb(244, 227, 227);
+   background-color: rgb(241, 26, 26)  ;
+ }
